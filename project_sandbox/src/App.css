@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+.search-container{
+    position: relative;
+    
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
