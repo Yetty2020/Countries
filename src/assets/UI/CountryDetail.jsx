@@ -76,7 +76,7 @@ export default function CountryDetail() {
 
               <div className="mt-6 hidden lg:flex lg:flex-col lg:mt-10   ">
         <h2 className="font-bold mb-4    ">Border Countries:</h2>
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex gap-4 flex-wrap lg:grid lg:grid-cols-3 lg:gap-4">
           {borders.length > 0 ? (
             borders.map(border => (
               <div 
