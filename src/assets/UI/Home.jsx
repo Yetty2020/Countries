@@ -120,7 +120,7 @@ const handleSearch = async(query) =>{
 
 
 <div className={`w-full flex flex-wrap justify-center min-h-screen items-center md:items-start lg:items-start gap-14 py-10  ${darkMode ? 'bg-LightGray-100' :'bg-DarkBlue-700'}`}>
-    {countries.length === 0 ? (
+    {countries.length === 0 && searchQuery ? (
         <div className={`text-center text-xl ${darkMode ? 'text-DarkBlue-900' : 'text-white'}`}>
             <p>No countries found for "{searchQuery}"</p>
             <p className="text-sm mt-2">Try searching with a different term</p>
